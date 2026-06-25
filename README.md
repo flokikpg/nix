@@ -1,2 +1,2 @@
 # nix
-my nix hypr
+my nix hyprland.lua

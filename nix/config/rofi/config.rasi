@@ -1,0 +1,71 @@
+@import "~/.config/rofi/themes/tokyonight.rasi"
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+}
+
+window {
+    background-color: @background;
+    border: 0;
+    padding: 0;
+}
+
+mainbox {
+    padding: 0;
+    border: 0;
+    children: [ "inputbar", "listview" ];
+}
+
+element {
+    padding:          4px 12px;
+    text-color:       @foreground;
+    background-color: @normal-background;
+    border-radius:    6px;
+    cursor:           pointer;
+    spacing:          5px;
+    border:           0;
+}
+
+element selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    size:    16px;
+    padding: 0px 6px 0px 0px;
+}
+
+listview {
+    columns:      2;
+    lines:        9;
+    padding:      8px 0px;
+    fixed-height: true;
+    border:       0px;
+    spacing:      2px;
+    scrollbar:    false;
+}
+
+inputbar {
+    padding: 12px 12px 6px 12px;
+    spacing: 8px;
+}
+
+prompt {
+    text-color: @blue;
+}
+
+entry {
+    text-color: @lightfg;
+    placeholder-color: #565f89;
+}
+
+scrollbar {
+    enabled: false;
+}

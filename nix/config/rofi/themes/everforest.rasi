@@ -1,0 +1,31 @@
+* {
+    background:                  #2d353b;
+    background-color:            #2d353b;
+
+    foreground:                  #d3c6aa;
+    text-color:                  #d3c6aa;
+
+    lightbg:                     #3d484d;
+    lightfg:                     #e4e1cd;
+
+    red:                         #e67e80;
+    blue:                        #7fbbb3;
+
+	normal-background:           @background;
+    normal-foreground:           @foreground;
+
+    selected-normal-background:  @lightbg;
+    selected-normal-foreground:  @lightfg;
+
+    active-background:           @background;
+    active-foreground:           @blue;
+
+    urgent-background:           @background;
+    urgent-foreground:           @red;
+
+    alternate-normal-background: #1e1f2e;
+    alternate-normal-foreground: @foreground;
+
+    border-color:                @blue;
+    separatorcolor:              @foreground;
+}

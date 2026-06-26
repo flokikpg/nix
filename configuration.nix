@@ -71,6 +71,7 @@
     geany
     git
     gnome-themes-extra
+    gvfs
     hypridle
     hyprlock
     hyprshot

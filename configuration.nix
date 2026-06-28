@@ -25,6 +25,8 @@
 
   services.gvfs.enable = true;
 
+  security.polkit.enable = true;
+
   users.users.floki = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager" "audio" "video"];
@@ -94,12 +96,14 @@
     pamixer
     pavucontrol
     pcmanfm
+    polkit_gnome
     pywal16
     pywalfox-native
     quickshell
     rofi
     swaynotificationcenter
     tokyonight-gtk-theme
+    udiskie
     unzip
     vlc
     vscode-fhs

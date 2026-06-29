@@ -79,6 +79,7 @@
     hyprshot
     hunspell
     hunspellDicts.en_US
+    inputs.helium.packages.${system}.default
     kitty
     kdePackages.qt6ct
     libsForQt5.qtstyleplugin-kvantum
@@ -116,6 +117,7 @@
   ];
 
   fonts.packages = with pkgs; [
+    font-awesome
     corefonts
     vista-fonts
     nerd-fonts.geist-mono

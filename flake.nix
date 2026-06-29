@@ -7,13 +7,24 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "github:hyprwm/Hyprland/v0.55.0";
+    helium = {
+      url = "github:schembriaiden/helium-browser-nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs @ { self, nixpkgs, home-manager, hyprland, ... }: {
+  outputs = inputs @ {
+    self,
+    nixpkgs,
+    home-manager,
+    hyprland,
+    helium,
+    ...
+  }: {
     nixosConfigurations.nix = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = {inherit inputs;};
-      modules =  [
+      modules = [
         ./configuration.nix
         home-manager.nixosModules.home-manager
         {
